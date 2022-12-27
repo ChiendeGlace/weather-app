@@ -7,10 +7,18 @@
 }
 
 body {
-  height: 100vh;
+  position: relative;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 30vh 20vw 0 20vw;
+  color: white;
+  background-size: cover;
+  background-position: center;
 }
 
 .left-side {
@@ -18,6 +26,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  z-index: 100;
 }
 .left-side .weather-type {
   display: flex;
@@ -57,11 +66,21 @@ body {
   font-size: 2rem;
 }
 
+.color-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+  z-index: 1;
+}
+
 .right-side {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 24px;
+  z-index: 100;
 }
 .right-side button,
 .right-side input {
@@ -79,4 +98,18 @@ body {
 .right-side .info-holder {
   display: flex;
   gap: 8px;
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    padding: 20vh 0 20vh 0;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .right-side,
+.container .left-side {
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */

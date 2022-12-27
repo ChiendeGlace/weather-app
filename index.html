@@ -12,43 +12,47 @@
     <title>Weather App</title>
 </head>
 <body>
-    <section class="left-side">
-        <div class="weather-type">
-            <h2 id="weather"></h2>
-            <i id="weather-icon"></i>
-        </div>
-        <div class="city-info">
-            <p id="city-name"></p>
-            <p id="city-temp"></p>
-        </div>
-        <div class="date-info">
-            <p id="date"></p>
-            <p id="converter">Display °C and mph</p>
-        </div>
-    </section>
-    
-    <section class="right-side">
-        <form id="weather-form">
-            <input id="city-input" type="text" placeholder="Enter city name...">
-            <button type="submit">Search</button>
-        </form>
-        <div class="info-holder">
-            <i class="fa-solid fa-cloud-sun-rain"></i>
-            <p class="weather-info" id="feels"></p>
-        </div>
-        <div class="info-holder">
-            <i class="fa-solid fa-water"></i>
-            <p class="weather-info" id="humidity"></p>
-        </div>
-        <div class="info-holder">
-            <i class="fa-solid fa-wind"></i>
-            <p class="weather-info" id="windspeed"></p>
-        </div>
-        <div class="info-holder">
-            <i class="fa-solid fa-compress"></i>
-            <p class="weather-info" id="pressure"></p>
-        </div>
-    </section>
+    <div class="color-overlay">
+    </div>
+    <div class="container">
+        <section class="left-side">
+            <div class="weather-type">
+                <h2 id="weather"></h2>
+                <i id="weather-icon"></i>
+            </div>
+            <div class="city-info">
+                <p id="city-name"></p>
+                <p id="city-temp"></p>
+            </div>
+            <div class="date-info">
+                <p id="date"></p>
+                <p id="converter">Display °C and mph</p>
+            </div>
+        </section>
+        
+        <section class="right-side">
+            <form id="weather-form">
+                <input id="city-input" type="text" placeholder="Enter city name...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="info-holder">
+                <i class="fa-solid fa-cloud-sun-rain"></i>
+                <p class="weather-info" id="feels"></p>
+            </div>
+            <div class="info-holder">
+                <i class="fa-solid fa-water"></i>
+                <p class="weather-info" id="humidity"></p>
+            </div>
+            <div class="info-holder">
+                <i class="fa-solid fa-wind"></i>
+                <p class="weather-info" id="windspeed"></p>
+            </div>
+            <div class="info-holder">
+                <i class="fa-solid fa-compress"></i>
+                <p class="weather-info" id="pressure"></p>
+            </div>
+        </section>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

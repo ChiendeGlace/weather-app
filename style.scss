@@ -5,12 +5,19 @@
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
-
 body {
-    height: 100vh;
+    position: relative;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 30vh 20vw 0 20vw;
+    color: white;
+    background-size: cover;
+    background-position: center;
 }
 
 .left-side {
@@ -18,6 +25,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    z-index: 100;
     .weather-type {
         display: flex;
         gap: 32px;
@@ -57,11 +65,21 @@ body {
     }
 }
 
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 1;
+}
+
 .right-side {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 24px;
+    z-index: 100;
     button,
     input {
         padding: 0.25em 1.5em;
@@ -71,11 +89,26 @@ body {
     }
     p {
         font-size: 1.125rem;
-    } i {
+    }
+    i {
         font-size: 1.5rem;
     }
     .info-holder {
         display: flex;
         gap: 8px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .container {
+        padding: 20vh 0 20vh 0;
+        gap: 32px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .right-side,
+        .left-side {
+            align-items: center;
+        }
     }
 }
