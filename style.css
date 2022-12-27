@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 30vh 20vw 0 20vw;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.left-side .weather-type {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.left-side .city-info {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.left-side .date-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.left-side h2,
+.left-side i {
+  font-size: 3rem;
+}
+.left-side h2 {
+  font-family: "Oswald", sans-serif;
+}
+.left-side p {
+  font-size: 1.125rem;
+}
+.left-side #converter {
+  cursor: pointer;
+}
+.left-side #city-name,
+.left-side #city-temp {
+  font-size: 2rem;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+}
+.right-side button,
+.right-side input {
+  padding: 0.25em 1.5em;
+}
+.right-side button {
+  cursor: pointer;
+}
+.right-side p {
+  font-size: 1.125rem;
+}
+.right-side i {
+  font-size: 1.5rem;
+}
+.right-side .info-holder {
+  display: flex;
+  gap: 8px;
+}/*# sourceMappingURL=style.css.map */

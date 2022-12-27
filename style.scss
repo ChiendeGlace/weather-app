@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 30vh 20vw 0 20vw;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    .weather-type {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+    .city-info {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    .date-info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    h2,
+    i {
+        font-size: 3rem;
+    }
+    h2 {
+        font-family: 'Oswald', sans-serif;
+    }
+    p {
+        font-size: 1.125rem;
+    }
+    #converter {
+        cursor: pointer;
+    }
+    #city-name,
+    #city-temp {
+        font-size: 2rem;
+    }
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+    button,
+    input {
+        padding: 0.25em 1.5em;
+    }
+    button {
+        cursor: pointer;
+    }
+    p {
+        font-size: 1.125rem;
+    } i {
+        font-size: 1.5rem;
+    }
+    .info-holder {
+        display: flex;
+        gap: 8px;
+    }
+}
